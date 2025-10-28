@@ -1,9 +1,9 @@
 .contact-section {
   background-color: #0f172a;
   color: #fff;
-  padding: 100px 60px;
+  padding: 80px 50px;
   border-radius: 20px;
-  margin: 60px 50px;
+  margin: 50px 40px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
@@ -12,34 +12,35 @@
   font-size: 32px;
   font-weight: 700;
   color: #6366f1;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .contact-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 30px;
   justify-content: center;
+  align-items: flex-start;
 }
 
 /* Cards */
 .contact-card {
   background-color: #1e293b;
   border-radius: 12px;
-  padding: 25px 30px;
+  padding: 20px 25px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(99, 102, 241, 0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.3);
 }
 
 /* Form card */
 .form-card {
-  flex: 1 1 500px;
-  max-width: 580px;
+  flex: 1 1 420px;
+  max-width: 480px;
 }
 
 .contact-header {
@@ -47,17 +48,17 @@
   align-items: center;
   gap: 10px;
   color: #a5b4fc;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .contact-icon {
-  font-size: 24px;
+  font-size: 22px;
   color: #6366f1;
 }
 
 .contact-form label {
   display: block;
-  margin: 10px 0 6px;
+  margin: 8px 0 5px;
   font-weight: 500;
   color: #d1d5db;
 }
@@ -65,14 +66,14 @@
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 12px 14px;
+  padding: 10px 12px;
   border-radius: 8px;
   border: none;
   outline: none;
   background-color: #0f172a;
   color: #fff;
   font-size: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   transition: box-shadow 0.3s ease;
 }
 
@@ -82,19 +83,19 @@
 }
 
 .contact-form textarea {
-  min-height: 120px;
+  min-height: 100px;
   resize: none;
 }
 
 .send-btn {
-  margin-top: 10px;
+  margin-top: 8px;
   width: 100%;
   background-color: #6366f1;
   color: white;
   border: none;
-  padding: 12px;
+  padding: 10px;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 15px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -106,9 +107,10 @@
 
 /* Info cards */
 .contact-info {
-  flex: 1 1 300px;
+  flex: 1 1 350px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 25px;
 }
 
@@ -119,7 +121,7 @@
 .info-icon {
   font-size: 22px;
   color: #6366f1;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .info-card h4 {
@@ -137,30 +139,49 @@
   text-decoration: underline;
 }
 
-.status {
-  display: block;
+/* Highlight phone links */
+.info-card a[href^="tel:"] {
   color: #22c55e;
-  margin-top: 5px;
   font-weight: 500;
+}
+
+.info-card a[href^="tel:"]:hover {
+  text-decoration: underline;
 }
 
 /* Responsive */
 @media (max-width: 900px) {
   .contact-section {
-    padding: 80px 30px;
+    padding: 60px 25px;
     margin: 40px 20px;
   }
 
   .contact-container {
     flex-direction: column;
     align-items: center;
+    gap: 25px;
   }
 
   .form-card {
     width: 100%;
+    max-width: 100%;
   }
 
   .contact-info {
     width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-section {
+    padding: 50px 20px;
+  }
+
+  .contact-title {
+    font-size: 26px;
+  }
+
+  .send-btn {
+    font-size: 14px;
   }
 }

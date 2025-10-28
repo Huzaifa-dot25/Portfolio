@@ -1,8 +1,8 @@
 import React from "react";
 import "./Hero.css";
 import { Link } from "react-scroll";
-
 import heroImage from "../../assets/img.jpg";
+import cvFile from "../../assets/resume.pdf";
 
 const Hero = () => {
   return (
@@ -20,7 +20,10 @@ const Hero = () => {
         </p>
 
         <div className="hero-buttons">
-          <button className="primary-btn">Download CV</button>
+          <a href={cvFile} download="Huzaifa-Ajmal-CV.pdf">
+            <button className="primary-btn">Download CV</button>
+          </a>
+
           <Link
             to="projects"
             smooth={true}

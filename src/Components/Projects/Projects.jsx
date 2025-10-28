@@ -7,6 +7,7 @@ import project2 from "../../assets/e-com.jpg.png";
 import project3 from "../../assets/portfolio.jpg.png";
 import project4 from "../../assets/edusity.jpg.png";
 import project5 from "../../assets/news.png";
+import project6 from "../../assets/weather.png";
 
 const Projects = () => {
   const projects = [
@@ -50,6 +51,14 @@ const Projects = () => {
       live: "https://newsportal-demo.vercel.app",
       linkedin: "https://www.linkedin.com/in/huzaifa-ajmal",
     },
+    {
+      title: "Weather App",
+      image: project6,
+      desc: "A responsive weather app built with React that fetches real-time weather data using a public API and displays forecasts in an elegant UI",
+      github: "https://github.com/Huzaifa-dot25",
+      live: "https://weather-app-demo.vercel.app",
+      linkedin: "https://www.linkedin.com/in/huzaifa-ajmal",
+    },
   ];
 
   return (
@@ -76,6 +85,17 @@ const Projects = () => {
             </div>
           </div>
         ))}
+      </div>
+
+      <div className="view-all-container">
+        <a
+          href="https://github.com/Huzaifa-dot25"
+          target="_blank"
+          rel="noreferrer"
+          className="view-all-btn"
+        >
+          <FaGithub className="github-icon" /> View All Projects
+        </a>
       </div>
     </section>
   );

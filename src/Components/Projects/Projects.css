@@ -56,6 +56,34 @@
   min-height: 60px;
 }
 
+.view-all-container {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.view-all-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #6366f1;
+  color: #f8fafc;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.view-all-btn:hover {
+  background-color: #4f46e5;
+  transform: translateY(-3px);
+}
+
+.github-icon {
+  font-size: 1.3rem;
+}
+
 .project-links {
   display: flex;
   justify-content: center;

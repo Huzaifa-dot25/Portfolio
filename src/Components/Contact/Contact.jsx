@@ -3,7 +3,7 @@ import {
   FaPaperPlane,
   FaEnvelope,
   FaMapMarkerAlt,
-  FaClock,
+  FaPhoneAlt,
 } from "react-icons/fa";
 import "./Contact.css";
 
@@ -21,7 +21,7 @@ const Contact = () => {
           </div>
 
           <form
-            action="https://formspree.io/f/xpwyorav" //
+            action="https://formspree.io/f/xpwyorav"
             method="POST"
             className="contact-form"
             onSubmit={(e) => {
@@ -36,15 +36,15 @@ const Contact = () => {
                 .then((response) => {
                   if (response.ok) {
                     alert(
-                      " Message sent successfully! I’ll get back to you soon."
+                      "Message sent successfully! I’ll get back to you soon."
                     );
                     form.reset();
                   } else {
-                    alert(" Something went wrong. Please try again later.");
+                    alert("Something went wrong. Please try again later.");
                   }
                 })
                 .catch(() => {
-                  alert(" Network error. Please check your connection.");
+                  alert("Network error. Please check your connection.");
                 });
             }}
           >
@@ -83,9 +83,16 @@ const Contact = () => {
             <FaEnvelope className="info-icon" />
             <h4>Email</h4>
             <p>Ready for your next project</p>
-            <a href="mailto:huzaifaajmaldev@gmail.com">
+            <a href="mailto:huzaifaajmal012@gmail.com">
               huzaifaajmal012@gmail.com
             </a>
+          </div>
+
+          <div className="contact-card info-card">
+            <FaPhoneAlt className="info-icon" />
+            <h4>Phone</h4>
+            <p>Always reachable for collaborations</p>
+            <a href="tel:+923116414103">+92 311 6414103</a>
           </div>
 
           <div className="contact-card info-card">
@@ -93,13 +100,6 @@ const Contact = () => {
             <h4>Location</h4>
             <p>Based in Faisalabad, Pakistan</p>
             <p>Available for work worldwide</p>
-          </div>
-
-          <div className="contact-card info-card">
-            <FaClock className="info-icon" />
-            <h4>Response Time</h4>
-            <p>Usually respond within 24 hours</p>
-            <span className="status">● Currently Available</span>
           </div>
         </div>
       </div>
